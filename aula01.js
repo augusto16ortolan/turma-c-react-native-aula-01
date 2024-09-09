@@ -1,28 +1,18 @@
-let idade = 21;
-let genero = "feminino";
-let condicao = idade >= 18 && genero != "masculino";
+let contador = 10;
 
-//condição ternária
-let resultado = idade >= 18 ? "Maior de idade" : "Menor de idade";
-
-if (idade > 18) {
-  console.log("Maior de idade");
-} else if (idade == 18) {
-  console.log("Maior de idade");
-} else {
-  console.log("Menor de idade");
+//for loop
+for (i = 0; i <= contador; i++) {
+  //console.log(i);
 }
 
-let imposto = "SIMPLES_NACIONAL";
+let listaDeNumeros = [1, 2, 3, 4, 5];
 
-switch (imposto) {
-  case "SIMPLES_NACIONAL":
-    console.log("Imposto 44");
-    break;
-  case "IRRF":
-    console.log("Imposto 16");
-    break;
-  default:
-    console.log("Nenhum imposto encontrado");
-    break;
+//for of
+for (const numero of listaDeNumeros) {
+  console.log(numero);
+}
+
+while (contador > 1) {
+  console.log(contador);
+  contador--;
 }
