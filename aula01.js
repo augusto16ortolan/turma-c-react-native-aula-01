@@ -1,33 +1,28 @@
-x = 10.5;
-y = 5;
-console.log(typeof x);
-x = "Augusto";
-console.log(typeof x);
-console.log(typeof true);
+let idade = 21;
+let genero = "feminino";
+let condicao = idade >= 18 && genero != "masculino";
 
-pessoa = {
-  nome: "Augusto",
-  idade: 23,
-};
+//condição ternária
+let resultado = idade >= 18 ? "Maior de idade" : "Menor de idade";
 
-lista = [1, 2, 3, 4, 5];
-
-console.log(Array.isArray(lista));
-
-console.log(typeof pessoa);
-
-//const é utilizado para variáveis imutáveis, que não mudam de valor durante o código
-const BASE_URL = "localhost:8080";
-console.log(BASE_URL);
-
-var numero = 10;
-if (numero == 10) {
-  var numero = 20;
-  console.log("Numero", numero);
+if (idade > 18) {
+  console.log("Maior de idade");
+} else if (idade == 18) {
+  console.log("Maior de idade");
+} else {
+  console.log("Menor de idade");
 }
-console.log("Numero", numero);
 
-var nome = "Augusto";
-nome = "Eduardo";
+let imposto = "SIMPLES_NACIONAL";
 
-console.log(nome);
+switch (imposto) {
+  case "SIMPLES_NACIONAL":
+    console.log("Imposto 44");
+    break;
+  case "IRRF":
+    console.log("Imposto 16");
+    break;
+  default:
+    console.log("Nenhum imposto encontrado");
+    break;
+}
